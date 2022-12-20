@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Flappy Bird - Configurações</title>
+    <link rel="stylesheet" href="css/flappy.css" /> 
+  </head>
+
+  <body class="conteudo">
+    <div class="box">
+      <form id="myForm" action="js/flappy.js" method="POST">
+        <fieldset>
+          <legend><b>Configurações do Jogo</b></legend>
+          <br />
+          <div class="inputBox">
+            <label for="name">Nome do Jogador:</label>
+            <input
+              type="text"
+              name="nome"
+              id="nome"
+              class="inputUser"
+              required
+            />
+          </div>
+          <br />
+
+          <p>Cenário do Jogo:</p>
+          <input type="radio" name="tema" value="noturno" id="tema"  />
+          <label for="tema">Noturno</label>
+          <input type="radio" name="tema" value="diurno" id="tema" />
+          <label for="tema">Diurno</label>
+
+          <p>Intervalo entre abertura dos canos:</p>
+          
+          <input type="radio" id="nivel" name="nivel" value="facil" required />
+          <label for="facil">Fácil</label>
+          <input type="radio" id="nivel" name="nivel" value="medio" required />
+          <label for="medio">Médio</label>
+          <input
+            type="radio"
+            id="nivel"
+            name="nivel"
+            value="dificil"
+            required
+          />
+          <label for="dificil">Difícil</label>
+
+          <div class="inputBox">
+            <p>Distância entre os canos:</p>
+            <input
+              type="radio"
+              id="distancia"
+              name="distancia"
+              value="Facil"
+              required
+            />
+            <label for="facil">Fácil</label>
+            <input
+              type="radio"
+              id="distancia"
+              name="distancia"
+              value="Medio"
+              required
+            />
+            <label for="medio">Médio</label>
+            <input
+              type="radio"
+              id="distancia"
+              name="distancia"
+              value="Dificil"
+              required
+            />
+            <label for="Dificil">Difícil</label>
+          </div>
+          <br />
+
+          <div class="inputBox">
+            <label for="name">Velocidade do Jogo</label>
+            <input
+              type="number"
+              name="velocidade"
+              id="velocidade"
+              class="inputSpeed"
+              min="1"
+              max="10"
+              required
+            />
+          </div>
+          <br />
+
+          <label for="name">Personagens:</label>
+          <select name="select" id="select" required>
+            <option value="Passaro" selected>Pássaro</option>
+            <option value="Dragao">Dragão</option>
+            <option value="Abelha">Abelha</option>
+          </select>
+
+          <p>Tipo do Jogo:</p>
+          <input type="radio" id="tipo" name="tipo" value="treino" required />
+          <label for="tipo">Treino</label>
+          <input type="radio" id="tipo" name="tipo" value="real" required />
+          <label for="tipo">Real</label>
+
+          <p>Velocidade do Personagem:</p>
+          <input
+            type="radio"
+            id="personagem"
+            name="personagem"
+            value="baixa"
+            required
+          />
+          <label for="baixa">Baixa</label>
+          <input
+            type="radio"
+            id="personagem"
+            name="personagem"
+            value="media"
+            required
+          />
+          <label for="media">Média</label>
+          <input
+            type="radio"
+            id="personagem"
+            name="personagem"
+            value="rapida"
+            required
+          />
+          <label for="rapida">Rápida</label>
+
+          <p>Pontuação:</p>
+          <input type="radio" id="pontos" name="pontos" value="1" required />
+          <label for="pontos">1</label>
+          <input type="radio" id="pontos" name="pontos" value="10" required />
+          <label for="pontos">10</label>
+          <input type="radio" id="pontos" name="pontos" value="100" required />
+          <label for="pontos">100</label>
+          <br />
+          <button id="button">Enviar</button>
+        </fieldset>
+      </form>
+    </div>
+    <section id="jogo">
+      <h1 class="titulo">Flappy Bird</h1>
+      <div wm-flappy>
+        <script src="js/flappy.js"></script>
+      
+    </section>
+  </body>
+</html>
